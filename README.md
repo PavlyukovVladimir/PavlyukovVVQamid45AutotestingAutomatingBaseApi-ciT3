@@ -1,4 +1,4 @@
-***Павлюков Владимир Владимирович, группа*** **QAMID45**
+[![Build status](https://ci.appveyor.com/api/projects/status/fbqrcd8gpqxcg1pt?svg=true)](https://ci.appveyor.com/project/PavlyukovVladimir/pavlyukovvvqamid45autotestingautomatingbaseapi-ci) ***Павлюков Владимир Владимирович, группа*** **QAMID45**
 
 # Домашнее задание к занятию «1.2. Тестирование API, CI»
 
@@ -275,7 +275,7 @@ dependencies {
 
 Модифицируйте существующий тест так, чтобы он проверял соответствие схеме. Для этого:
 
-```java
+```
       // код теста
       .then()
           .statusCode(200)
@@ -312,7 +312,7 @@ dependencies {
 
 С GET-запросами мы немного потренировались, теперь нас будут интересовать POST-запросы, а именно отправка тела запроса:
 
-```java
+```
 // Given - When - Then
 // Предусловия
 given()
@@ -348,7 +348,7 @@ given()
 то обратиться к нему с помощью JSONPath можно вот так: `data`, например: `.body("data", equalTo("some value"))`. То есть обращение к полю верхнеуровневого объекта, который называется безымянным, идёт без точки. В примере на лекциях у нас был массив и мы сразу обращались `[0]` — то же самое.
 
 Если соберётесь отправлять текст не на латинице, то вам нужно будет выставлять кодировку, например, UTF-8:
-```java
+```
 given()
   .baseUri("https://postman-echo.com")
   .contentType("text/plain; charset=UTF-8")
