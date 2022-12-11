@@ -378,5 +378,5 @@ given()
 Багрепорты сделаны на основе результатов тестирования из ветки testNG. Тестирование из текущей не нашло ничего нового,
 переписывать старые багрепорты или добавлять новые нет смысла
 
-* [Отрицательный ввод не вызывает ошибку](https://github.com/PavlyukovVladimir/PavlyukovVVQAMid45M9T1AutomationBasics/issues/1)
-* [Кратный 1000 ввод, возвращает 1000](https://github.com/PavlyukovVladimir/PavlyukovVVQAMid45M9T1AutomationBasics/issues/2)
+* []()
+* []()
