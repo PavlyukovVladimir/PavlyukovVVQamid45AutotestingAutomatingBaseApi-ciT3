@@ -14,3 +14,7 @@ install:
 
 build_script:
   - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+
+on_finish:
+  - 7z a build/reports.zip build/reports/
+  - appveyor PushArtifact build/reports.zip

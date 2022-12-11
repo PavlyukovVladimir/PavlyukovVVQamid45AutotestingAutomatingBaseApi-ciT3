@@ -369,7 +369,7 @@ given()
 
 # Запуск тестов
 
-* Runs server: `-jar app-mbank.jar`
+* Runs server: `java -jar artifacts/app-mbank.jar`
 * Runs all tests: `./gradlew clean test`
 * [Просмотр отчета](build/reports/tests/test/index.html)
 
