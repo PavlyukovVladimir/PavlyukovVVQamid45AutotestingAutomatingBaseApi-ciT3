@@ -1,4 +1,6 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/fbqrcd8gpqxcg1pt?svg=true)](https://ci.appveyor.com/project/PavlyukovVladimir/pavlyukovvvqamid45autotestingautomatingbaseapi-ci) ***Павлюков Владимир Владимирович, группа*** **QAMID45**
+[![Build status](https://ci.appveyor.com/api/projects/status/fbqrcd8gpqxcg1pt?svg=true)](https://ci.appveyor.com/project/PavlyukovVladimir/pavlyukovvvqamid45autotestingautomatingbaseapi-ci)
+
+**Павлюков Владимир Владимирович, группа*** **QAMID45**
 
 # Домашнее задание к занятию «1.2. Тестирование API, CI»
 
