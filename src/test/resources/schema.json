@@ -8,7 +8,7 @@
     },
     "data": {
       "type": ["string"],
-      "enum": ["some data1"]
+      "enum": ["some data"]
     },
     "files": {
       "type": ["object"]
@@ -29,7 +29,7 @@
         },
         "host": {
           "type": "string",
-          "enum": ["postman-echo.com1"]
+          "enum": ["postman-echo.com"]
         },
         "content-type": {
           "type": "string",
@@ -40,7 +40,7 @@
         "x-forwarded-proto",
         "x-forwarded-port",
         "host",
-        "content-type1"
+        "content-type"
       ],
       "additionalProperties": true
     },
@@ -52,7 +52,7 @@
     },
     "url": {
       "type": "string",
-      "pattern": "^https://postman-echo\\.com1.*"
+      "pattern": "^https://postman-echo\\.com.*"
     }
   },
   "required": [

@@ -1,13 +1,15 @@
 package ru.netology;
 
+import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static org.hamcrest.Matchers.*;
 
 class PostmanEcoApiTest {
     @Test
-    void shouldReturnDemoAccounts() {
+    void shouldReturnSomeData() {
         // Given - When - Then
         // Предусловия
         given()
@@ -24,6 +26,10 @@ class PostmanEcoApiTest {
                 .log()
                 .all()
                 .statusCode(200)
-                .body(matchesJsonSchemaInClasspath("schema.json"));
+                .contentType(ContentType.JSON)
+                .body(matchesJsonSchemaInClasspath("schema.json"))
+                .body("data", equalTo("some data"))
+                .body("headers", isA(Object.class))
+                .body("data == \"some1 data\"", is(true));
     }
 }
