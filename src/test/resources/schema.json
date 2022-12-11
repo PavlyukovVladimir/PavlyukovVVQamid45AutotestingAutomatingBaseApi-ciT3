@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "default": {},
+  "properties": {
+    "args": {
+      "type": ["object"]
+    },
+    "data": {
+      "type": ["string"],
+      "enum": ["some data"]
+    },
+    "files": {
+      "type": ["object"]
+    },
+    "form": {
+      "type": "object"
+    },
+    "headers": {
+      "type": "object",
+      "properties": {
+        "x-forwarded-proto": {
+          "type": "string",
+          "enum": ["https"]
+        },
+        "x-forwarded-port": {
+          "type": "string",
+          "enum": ["443"]
+        },
+        "host": {
+          "type": "string",
+          "enum": ["postman-echo.com"]
+        },
+        "content-type": {
+          "type": "string",
+          "enum": ["text/plain; charset=UTF-8"]
+        }
+      },
+      "required": [
+        "x-forwarded-proto",
+        "x-forwarded-port",
+        "host",
+        "content-type"
+      ],
+      "additionalProperties": true
+    },
+    "json": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https://postman-echo\\.com.*"
+    }
+  },
+  "required": [
+    "args",
+    "data",
+    "files",
+    "form",
+    "headers",
+    "json",
+    "url"
+  ],
+  "additionalProperties": false
+}
