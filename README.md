@@ -73,4 +73,4 @@ given()
 
 * Runs all tests: `./gradlew clean test`
 * [Просмотр отчета(локальное выполнение тестов)](build/reports/tests/test/index.html)
-* [Просмотр отчета(appveyor выполнение тестов при push. Можно скачать архив отчета reports.zip.)](https://ci.appveyor.com/project/PavlyukovVladimir/pavlyukovvvqamid45autotestingautomatingbaseapi-ci/build/artifacts)
+* [Просмотр отчета(appveyor выполнение тестов при push. Можно скачать архив отчета reports.zip, расположен на вкладке Artifacts)](https://ci.appveyor.com/project/PavlyukovVladimir/pavlyukovvvqamid45autotestingautomatingbaseapi-cit/history)
