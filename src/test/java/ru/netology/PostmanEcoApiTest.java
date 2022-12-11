@@ -29,7 +29,7 @@ class PostmanEcoApiTest {
                 .contentType(ContentType.JSON)
                 .body(matchesJsonSchemaInClasspath("schema.json"))
                 .body("data", equalTo("some data"))
-                .body("headers", isA(Object.class))
-                .body("data == \"some1 data\"", is(true));
+                .body("headers", hasEntry("x-forwarded-proto", "https1"))
+                .body("data == \"some data\"", is(true));
     }
 }
